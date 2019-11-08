@@ -42,4 +42,4 @@ Expected API functions:
 Last update: 11/04/2019.
 
 ### ```Christian```
-:milky_way: :rocket: :telescope: :earth_americas
+:milky_way: :rocket: :telescope: :earth_americas:
