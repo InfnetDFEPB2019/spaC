@@ -2,42 +2,53 @@
 
 // https://api.nasa.gov/neo/rest/v1/feed?start_date=2015-09-07&end_date=2015-09-08&api_key=DEMO_KEY
 
-// import {Comet} from 'Comet';
-// import defaultExport, as * from "Comet";
-// import Comet from './Comet';
-
-const START_DATE = String(document.querySelector("input#start").value),
-      END_DATE = String(document.querySelector("input#end").value),
-      DAY_START_DATE = String(START_DATE.substr(8, 2)),
+const /*START_DATE = String(document.querySelector("input#start").value),
+      END_DATE = String(document.querySelector("input#end").value),*/
+      START_DATE = "2015-09-07",
+      END_DATE = "2015-09-08",
+      /*DAY_START_DATE = String(START_DATE.substr(8, 2)),
       DAY_END_DATE = String(END_DATE.substr(8, 2)),
       MONTH_START_DATE = String(START_DATE.substr(5, 2)),
       MONTH_END_DATE = String(END_DATE.substr(5, 2)),
       YEAR_START_DATE = String(START_DATE.substr(0, 4)),
       YEAR_END_DATE = String(END_DATE.substr(0, 4));
+      MONTHS_31_DAYS = Array("01","03","05","07","08","10","12");
+      MONTHS_30_DAYS = Array ("04","06","09","11");*/
+      FEBRUARY = "02";
+      SEPTEMBER = "09";
+      DECEMBER = "12";
 
-
-let url = "https://api.nasa.gov/neo/rest/v1/feed?start_date=" + START_DATE + "&end_date=" + END_DATE + "&api_key=DEMO_KEY",
+let URL = "https://api.nasa.gov/neo/rest/v1/feed?start_date=" + START_DATE + "&end_date=" + END_DATE + "&api_key=DEMO_KEY",
     cometList = Array();
 
-// console.log(START_DATE);
-// console.log(END_DATE);
-// console.log(DAY_START_DATE);
-// console.log(DAY_END_DATE);
-// console.log(MONTH_START_DATE);
-// console.log(MONTH_END_DATE);
-// console.log(YEAR_START_DATE);
-// console.log(YEAR_END_DATE);
+function iterateDate(actualDate){
+    let
+        day = String(actualDate.substr(8, 2)),
+        month = String(actualDate.substr(5, 2)),
+        year = String(actualDate.substr(0, 4));
 
-// function defineMonth(month) {
-//     switch (month) {
-//         case "01":
-//             ["2015-01-07"];["2015-09-13"];
-//
-//     }
-// }
-
-function defineYear() {
-
+    switch(month){
+        case FEBRUARY:
+            switch (day) {
+                case "28":
+                    year = Number(year);
+                    ((year % 4 === 0) && (year % 100 !== 0)) || (year % 400 === 0) ?
+                    (day = "29",month = "02") : (day = "01",month = "03");
+                    year = String(year); break;
+                case "29": day = "01"; month = "03"; break;
+                default: day = String(Number(day + 1));
+            }
+            break;
+        case SEPTEMBER:
+            (day === "30" ? (day = "01",month = "10")
+           : day = Number(day + 1)); day = String(day); break;
+        case DECEMBER:
+            (day === "31" ? (day = "01",month="01",year = String(Number(year) + 1))
+           : day = Number(day + 1)); day = String(day); break;
+        default:
+             day = String(Number(day + 1));
+    }
+    return String(year + "-" + month + "-" + day);
 }
 
 class Comet {
@@ -159,42 +170,74 @@ function cometSearch(){
     function reqListener (){
         // let comets = JSON.parse(this.response);
         let comets = JSON.parse(nasa);
-        // console.log(comets);
-        // console.log(((comets["near_earth_objects"]["2015-09-08"]["0"]["estimated_diameter"]["kilometers"]["estimated_diameter_max"])*1000).toFixed(2));
         console.log(comets);
-
-        // for (i = 1; i < 8; i++){
-        //     console.log("0" + String(i));
-        // }
 
         console.log("\n");
 
-        console.log(Object.values(comets)[2]["2015-09-08"][0]);
+        // let
+        //     id = String(Object.values(comets)[2][START_DATE][0]["id"]),
+        //     name = String((Object.values(comets)[2][START_DATE][0]["name"])
+        //         .replace("(","").replace(")","")),
+        //     absoluteMagnitude = String(Object.values(comets)[2][START_DATE][0]["absolute_magnitude_h"]),
+        //     estimatedDiameterAvg = String((((
+        //           Object.values(comets)[2][START_DATE][0]["estimated_diameter"]["meters"]["estimated_diameter_max"]
+        //         + Object.values(comets)[2][START_DATE][0]["estimated_diameter"]["meters"]["estimated_diameter_min"])/2)).toFixed(2)),
+        //     potentiallyHazardous = Comet.hazardLevel(Object.values(comets)[2][START_DATE][0]["is_potentially_hazardous_asteroid"]),
+        //     closeApproach = String(Object.values(comets)[2][START_DATE][0]["close_approach_data"][0]["close_approach_date_full"])
+        //         .replace(" ", " - "),
+        //     relativeVelocity = String(Number(
+        //         Object.values(comets)[2][START_DATE][0]["close_approach_data"][0]["relative_velocity"]["kilometers_per_hour"]).toFixed(2)),
+        //     missDistance = String(Number(Object.values(comets)[2][START_DATE][0]["close_approach_data"][0]["miss_distance"]["kilometers"])
+        //         .toFixed(2)),
+        //     sentryObject = Comet.hitChanceNext100Years(String(Object.values(comets)[2][START_DATE][0]["sentry_object"]));
+
+        // let
+        //     id = String(Object.values(comets)[2][END_DATE][0]["id"]),
+        //     name = String((Object.values(comets)[2][END_DATE][0]["name"])
+        //         .replace("(","").replace(")","")),
+        //     absoluteMagnitude = String(Object.values(comets)[2][END_DATE][0]["absolute_magnitude_h"]),
+        //     estimatedDiameterAvg = String((((
+        //           Object.values(comets)[2][END_DATE][0]["estimated_diameter"]["meters"]["estimated_diameter_max"]
+        //         + Object.values(comets)[2][END_DATE][0]["estimated_diameter"]["meters"]["estimated_diameter_min"])/2)).toFixed(2)),
+        //     potentiallyHazardous = Comet.hazardLevel(Object.values(comets)[2][END_DATE][0]["is_potentially_hazardous_asteroid"]),
+        //     closeApproach = String(Object.values(comets)[2][END_DATE][0]["close_approach_data"][0]["close_approach_date_full"])
+        //         .replace(" ", " - "),
+        //     relativeVelocity = String(Number(
+        //         Object.values(comets)[2][END_DATE][0]["close_approach_data"][0]["relative_velocity"]["kilometers_per_hour"]).toFixed(2)),
+        //     missDistance = String(Number(Object.values(comets)[2][END_DATE][0]["close_approach_data"][0]["miss_distance"]["kilometers"])
+        //         .toFixed(2)),
+        //     sentryObject = Comet.hitChanceNext100Years(String(Object.values(comets)[2][END_DATE][0]["sentry_object"]));
 
         let
             id = String(Object.values(comets)[2]["2015-09-08"][0]["id"]),
-            name = String((Object.values(comets)[2]["2015-09-08"][0]["name"]).replace("(","").replace(")","")),
+            name = String((Object.values(comets)[2]["2015-09-08"][0]["name"])
+                .replace("(","").replace(")","")),
             absoluteMagnitude = String(Object.values(comets)[2]["2015-09-08"][0]["absolute_magnitude_h"]),
-            estimatedDiameterAvg = String((((Object.values(comets)[2]["2015-09-08"][0]["estimated_diameter"]["meters"]["estimated_diameter_max"]
-                + Object.values(comets)[2]["2015-09-08"][0]["estimated_diameter"]["meters"]["estimated_diameter_min"])/ 2)).toFixed(2)),
+            estimatedDiameterAvg = String((((
+                  Object.values(comets)[2]["2015-09-08"][0]["estimated_diameter"]["meters"]["estimated_diameter_max"]
+                + Object.values(comets)[2]["2015-09-08"][0]["estimated_diameter"]["meters"]["estimated_diameter_min"])/2)).toFixed(2)),
             potentiallyHazardous = Comet.hazardLevel(Object.values(comets)[2]["2015-09-08"][0]["is_potentially_hazardous_asteroid"]),
-            closeApproach = String(Object.values(comets)[2]["2015-09-08"][0]["close_approach_data"][0]["close_approach_date_full"]).replace(" ", " - "),
-            relativeVelocity = String(Number(Object.values(comets)[2]["2015-09-08"][0]["close_approach_data"][0]["relative_velocity"]["kilometers_per_hour"]).toFixed(2)),
-            missDistance = String(Number(Object.values(comets)[2]["2015-09-08"][0]["close_approach_data"][0]["miss_distance"]["kilometers"]).toFixed(2)),
+            closeApproach = String(Object.values(comets)[2]["2015-09-08"][0]["close_approach_data"][0]["close_approach_date_full"])
+                .replace(" ", " - "),
+            relativeVelocity = String(Number(
+                Object.values(comets)[2]["2015-09-08"][0]["close_approach_data"][0]["relative_velocity"]["kilometers_per_hour"]).toFixed(2)),
+            missDistance = String(Number(Object.values(comets)[2]["2015-09-08"][0]["close_approach_data"][0]["miss_distance"]["kilometers"])
+                .toFixed(2)),
             sentryObject = Comet.hitChanceNext100Years(String(Object.values(comets)[2]["2015-09-08"][0]["sentry_object"]));
 
-        let c = new Comet(id, name, absoluteMagnitude, estimatedDiameterAvg,potentiallyHazardous,closeApproach,relativeVelocity,missDistance,sentryObject);
-        console.log(c);
+        let c = new Comet(
+                          id,
+                          name,
+                          absoluteMagnitude,
+                          estimatedDiameterAvg,
+                          potentiallyHazardous,
+                          closeApproach,
+                          relativeVelocity,
+                          missDistance,
+                          sentryObject
+                        );
 
-        // console.log(id);
-        // console.log(name);
-        // console.log(absoluteMagnitude);
-        // console.log(estimatedDiameterAvg);
-        // console.log(potentiallyHazardous);
-        // console.log(closeApproach);
-        // console.log(relativeVelocity);
-        // console.log(missDistance);
-        // console.log(sentryObject);
+        console.log(c);
 
         // let c = new Comet();
         // while(comets.hasNext){
