@@ -3,7 +3,9 @@ import Comet from './Comet.js';
 //import Mortgage from './mortgage2';
 // import Comet from './Comet.js';
 
-// IMPORTANT LINKS: http://www.pressthered.com/navigating_a_json_object_in_javascript/
+// IMPORTANT LINKS:
+// http://www.pressthered.com/navigating_a_json_object_in_javascript/
+// https://developer.mozilla.org/pt-BR/docs/Web/API/Geolocation/getCurrentPosition
 
 // https://api.nasa.gov/neo/rest/v1/feed?start_date=2015-09-07&end_date=2015-09-08&api_key=DEMO_KEY
 
@@ -171,8 +173,6 @@ function iterateDate(actualDate){
 
 let nasaJSON = '../dummyFiles/nasa.json';
 
-
-
 let c = document.getElementById("button");
 c.addEventListener("click", () => oReq.send());
 
@@ -204,6 +204,42 @@ function convertToDateObj(date) {
 }
 
 function cometSearch (){
+
+    let options = {
+        enableHighAccuracy: true,
+        timeout: 30000,
+        maximumAge: 0
+    };
+
+    navigator.geolocation.getCurrentPosition(success,error,options);
+
+    function success(pos){
+        let gps = pos.coords;
+        //alert("LAT: " + gps.latitude + " | LONG: " + gps.longitude + " | ACCURACY: " + gps.accuracy);
+    }
+
+    // var options = {
+    //     enableHighAccuracy: true,
+    //     timeout: 5000,
+    //     maximumAge: 0
+    // };
+    //
+    // function success(pos) {
+    //     var crd = pos.coords;
+    //
+    //     console.log('Sua posição atual é:');
+    //     console.log('Latitude : ' + crd.latitude);
+    //     console.log('Longitude: ' + crd.longitude);
+    //     console.log('Mais ou menos ' + crd.accuracy + ' metros.');
+    // };
+    //
+    function error(err) {
+        console.warn('ERROR(' + err.code + '): ' + err.message);
+    }
+    //
+    // navigator.geolocation.getCurrentPosition(success, error, options);
+
+
     // let comets = JSON.parse(this.response);
     let comets = JSON.parse(this.response);
     console.log(comets);
