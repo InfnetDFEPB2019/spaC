@@ -215,7 +215,7 @@ function cometSearch (){
 
     function success(pos){
         let gps = pos.coords;
-        //alert("LAT: " + gps.latitude + " | LONG: " + gps.longitude + " | ACCURACY: " + gps.accuracy);
+        alert("LAT: " + gps.latitude + " | LONG: " + gps.longitude + " | ACCURACY: " + gps.accuracy);
     }
 
     // var options = {

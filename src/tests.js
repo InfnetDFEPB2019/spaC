@@ -40,5 +40,4 @@ var to = new Date(2012,1,20);
 for (var day = from; day <= to; day.setDate(day.getDate() + 1)) {
     console.log(day)
     // your day is here
-
 }
