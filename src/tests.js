@@ -1,18 +1,6 @@
 let
     date = "2019-11-11";
 
-function convertToDateObj(date) {
-    let
-        day = Number(date.substr(8, 2)),
-        month = Number(date.substr(5, 2)),
-        year = Number(date.substr(0, 4)),
-        nextDate;
-
-    date = new Date(year,(month-1),day);
-    nextDate = new Date();
-    nextDate = date.getUTCFullYear() + "-" + (date.getUTCMonth() + 1) + "-" + date.getUTCDate();
-    return nextDate;
-}
 let i = 11;
 const d = i + 6;
 
@@ -38,6 +26,19 @@ var to = new Date(2012,1,20);
 
 // loop for every day
 for (var day = from; day <= to; day.setDate(day.getDate() + 1)) {
-    console.log(day)
+    console.log(convertToDateObj(day))
     // your day is here
+}
+
+function convertToDateObj(value) {
+    let
+        day = Number(String(value.substr(8, 2))),
+        month = Number(String(value.substr(5, 2))),
+        year = Number(String(value.substr(0, 4)));
+
+    value = new Date(year,month,day);
+    //2015-09-08 / date = new Date(year,month,day);
+    value = Date.UTC(value.getFullYear(),value.getMonth(),value.getTime());
+    // date = date.getFullYear() + date.getMonth() + date.getTime();
+    return value;
 }
