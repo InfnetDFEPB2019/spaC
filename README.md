@@ -11,7 +11,7 @@ A search system which provides several features such as:
 * Pictures of Mars;
 * ISS location;
 * ISS information.
-* More features might be implemented until the end of the project.
+* More features may be implemented until the end of the project.
 
 --------
 #### API: 
@@ -21,12 +21,12 @@ A search system which provides several features such as:
 * [The Solar System OpenData](https://api.le-systeme-solaire.net/en/#doc) | MAYBE
 * [Where the ISS at?](wheretheiss.at) | [DOCS](https://wheretheiss.at/w/developer)
 
-<br><br>
+<br>
 
 ##### NASA API:
 Expected API functions:
-* APOD: Astronomy Picture of the Day
-* Asteroids NeoWs: Near Earth Object Web Service
+* APOD: Astronomy Picture of the Day 
+* Asteroids NeoWs: Near Earth Object Web Service - [Comet Search] **Development on final stage!** :heavy_check_mark: :man_technologist:
 * DONKI: Space Weather Database Of Notifications, Knowledge, Information
 * Insight: Mars Weather Service API
 * Mars Rover Photos: Image data gathered by NASA's Curiosity, Opportunity, and Spirit rovers on Mars
@@ -60,8 +60,8 @@ Possible API functions:
 Expected API functions:
 * Retrieval of the city which ISS is passing over and other information
 
-<br><br>
-Last update: 11/11/2019.
+<br>
+Last update: 11/16/2019.
 
 ### ```Christian```
 :milky_way: :rocket: :telescope: :earth_americas:
