@@ -3,14 +3,15 @@ import Comet from './Comet.js';
 // IMPORTANT LINKS:
 // http://www.pressthered.com/navigating_a_json_object_in_javascript/
 // https://developer.mozilla.org/pt-BR/docs/Web/API/Geolocation/getCurrentPosition
+// https://developer.mozilla.org/pt-BR/docs/Traversing_an_HTML_table_with_JavaScript_and_DOM_Interfaces
 
 // https://api.nasa.gov/neo/rest/v1/feed?start_date=2015-09-07&end_date=2015-09-08&api_key=DEMO_KEY
 
-const START_DATE = String(document.querySelector("input#start").value),
-      END_DATE = String(document.querySelector("input#end").value);
+const /*START_DATE = String(document.querySelector("input#start").value),
+      END_DATE = String(document.querySelector("input#end").value);*/
 
-    // START_DATE = "2015-09-07",
-    // END_DATE = "2015-09-08";
+    START_DATE = "2019-12-01",
+    END_DATE = "2019-12-06";
 
 let URL = "https://api.nasa.gov/neo/rest/v1/feed?start_date=" + START_DATE + "&end_date=" + END_DATE + "&api_key=DEMO_KEY",
     cometList = Array();
@@ -23,8 +24,8 @@ searchButton.addEventListener("click", () => oReq.send());
 let oReq = new XMLHttpRequest();
 oReq.onload = cometSearch;
 
-// oReq.open("get", nasaJSON, true);
-oReq.open("get", URL, true);
+oReq.open("get", nasaJSON, true);
+// oReq.open("get", URL, true);
 
 function formatDateJSON(dateValue) {
     let date = new Date(dateValue),
@@ -49,7 +50,9 @@ function formatDateJSON(dateValue) {
 function cometSearch () {
     let comets = JSON.parse(this.response),
         start = new Date(START_DATE),
-        end = new Date(END_DATE);
+        end = new Date(END_DATE),
+        comet = new Comet(),
+        key;
 
     start.setHours(start.getHours() + 4);
     end.setHours(end.getHours() + 4);
@@ -119,6 +122,49 @@ function cometSearch () {
     //     missDistance = String(Number(Object.values(comets)[2]["2015-09-08"][0]["close_approach_data"][0]["miss_distance"]["kilometers"])
     //         .toFixed(2)),
     //     sentryObject = Comet.hitChanceNext100Years(String(Object.values(comets)[2]["2015-09-08"][0]["sentry_object"]));
+
+    function generateTableHead(table) {
+        let thead = table.createTHead();
+        let row = thead.insertRow();
+        for (let key of data) {
+            let th = document.createElement("th");
+            let text = document.createTextNode(key);
+            th.appendChild(text);
+            row.appendChild(th);
+        }
+    }
+
+    function generateTable(table, data) {
+        for (let element of data) {
+            let row = table.insertRow();
+            for (key in element) {
+                let cell = row.insertCell();
+                let text = document.createTextNode(element[key]);
+                cell.appendChild(text);
+            }
+        }
+    }
+
+    // function printResult() {
+    //     let valueResult = document.querySelector("p#result");
+    //     valueResult.innerText = "SUMMARY: \nAPPROVED: " + ((approved * 100) / 20)
+    //         + " %" + "\nREPROVED: " + ((reproved * 100) / 20) + "%";
+    // }
+
+    let table = document.querySelector("table");
+    let data = Object.getOwnPropertyNames(comet);//classmateList.keys();
+    generateTableHead(table, data);
+    generateTable(table, cometList);
+    // printResult();
+
+
+
+
+
+
+
+
+
 }
 
 function getLocation() {

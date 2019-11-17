@@ -1,0 +1,38 @@
+@font-face{
+    font-family: "Luna";
+    /*src: url('../font/Stark semi-bold.otf');*/
+    src: url('../font/Luna-Regular.otf');
+    /*src: url('../font/Stellar-Light.otf');*/
+}
+
+body {
+    background-color: #161616;
+    margin: 1em;
+    font-family: Luna;
+}
+
+label {
+    color: #E5E5E5;
+}
+
+table {
+    color: #E5E5E5;
+    font-family: Luna;
+    font-size: 0.925em;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+}
+
+th,td {
+    padding: 2px;
+}
+
+#l1 {
+    font-size: 2.0em;
+    text-align: center;
+}
+#l2 {
+    font-size: 2.5em;
+    text-align: center;
+}
