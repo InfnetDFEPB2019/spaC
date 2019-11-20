@@ -1,14 +1,48 @@
-@font-face{
-    font-family: "Luna";
-    src: url('../font/Stark semi-bold.otf');
-    /*src: url('../font/Luna-Regular.otf');*/
-    /*src: url('../font/Stellar-Light.otf');*/
+/*@font-face{*/
+/*    font-family: "Luna";*/
+/*    src: url('../font/Stark semi-bold.otf');*/
+/*    !*src: url('../font/Luna-Regular.otf');*!*/
+/*    !*src: url('../font/Stellar-Light.otf');*!*/
+/*}*/
+
+/*Officina Sans ITC Pro Bold
+font-family: itc-officina-sans-pro, sans-serif;
+font-weight: 700;
+font-style: normal;
+
+
+Officina Sans ITC Pro Book
+font-family: itc-officina-sans-pro, sans-serif;
+font-weight: 400;
+font-style: normal;
+
+
+Officina Sans ITC Pro Medium
+font-family: itc-officina-sans-pro, sans-serif;
+font-weight: 500;
+font-style: normal;*/
+
+/*https://fonts.adobe.com/fonts/code-saver#fonts-section
+https://fonts.adobe.com/fonts/itc-officina-sans#fonts-section
+ */
+
+@font-face {
+    /*font-family: itc-officina-sans-pro, sans-serif;*/
+    /*font-weight: 500;*/
+    /*font-style: normal;*/
+
+    font-family: itc-officina-sans-pro, sans-serif;
+    font-weight: 500;
+    font-style: normal;
 }
 
 body {
     background-color: #161616;
     margin: 1em;
-    font-family: Luna;
+    /*font-family: Luna;*/
+    font-family: itc-officina-sans-pro, sans-serif;
+    font-weight: 500;
+    font-style: normal;
 }
 
 label {
@@ -17,11 +51,14 @@ label {
 
 table {
     color: #E5E5E5;
-    font-family: Luna;
-    font-size: 0.925em;
+    /*font-family: Luna;*/
+    font-size: 1em;
     text-align: center;
     display: flex;
     justify-content: center;
+    font-family: itc-officina-sans-pro, sans-serif;
+    font-weight: 500;
+    font-style: normal;
 }
 
 th,td {
