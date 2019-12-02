@@ -1,0 +1,346 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="bb34ccf3-d536-4157-b577-3a40d0c7a022" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/src/Comet.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/Comet.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/MarsWeather.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/MarsWeather.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/dummyTests.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/dummyTests.js" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="HTML File" />
+        <option value="CSS File" />
+        <option value="JavaScript File" />
+      </list>
+    </option>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="GithubDefaultAccount">
+    <option name="defaultAccountId" value="29be0069-abb4-4c31-b267-959fae94cf05" />
+  </component>
+  <component name="IgnoredFileRootStore">
+    <option name="generatedRoots">
+      <set>
+        <option value="C:\Users\user-admin\WebstormProjects\spaC\.idea" />
+      </set>
+    </option>
+  </component>
+  <component name="ProjectId" id="1SsGZR9ttw5mzFLs94cuxMmX9hD" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true">
+    <ConfirmationsSetting value="2" id="Add" />
+  </component>
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showExcludedFiles" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">
+    <property name="ASKED_ADD_EXTERNAL_FILES" value="true" />
+    <property name="DefaultHtmlFileTemplate" value="HTML File" />
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/resources/font" />
+    <property name="list.type.of.created.stylesheet" value="CSS" />
+    <property name="settings.editor.selected.configurable" value="settings.github" />
+  </component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\user-admin\WebstormProjects\spaC\resources\font" />
+    </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\user-admin\WebstormProjects\spaC\src" />
+      <recent name="C:\Users\user-admin\WebstormProjects\spaC\resources" />
+      <recent name="C:\Users\user-admin\WebstormProjects\spaC\src\object" />
+      <recent name="C:\Users\user-admin\WebstormProjects\spaC\resources\css" />
+    </key>
+  </component>
+  <component name="RunManager" selected="Node.js.tests.js">
+    <configuration name="dummyTests.js" type="NodeJSConfigurationType" temporary="true" nameIsGenerated="true" path-to-js-file="$PROJECT_DIR$/src/dummyTests.js" working-dir="$PROJECT_DIR$/src">
+      <method v="2" />
+    </configuration>
+    <configuration name="tests.js" type="NodeJSConfigurationType" temporary="true" nameIsGenerated="true" path-to-js-file="$PROJECT_DIR$/src/tests.js" working-dir="$PROJECT_DIR$/src">
+      <method v="2" />
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Node.js.tests.js" />
+        <item itemvalue="Node.js.dummyTests.js" />
+      </list>
+    </recent_temporary>
+  </component>
+  <component name="ServiceViewManager">
+    <option name="viewStates">
+      <list>
+        <serviceView>
+          <treeState>
+            <expand />
+            <select />
+          </treeState>
+        </serviceView>
+      </list>
+    </option>
+  </component>
+  <component name="SvnConfiguration">
+    <configuration>C:\Users\user-admin\AppData\Roaming\Subversion</configuration>
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="bb34ccf3-d536-4157-b577-3a40d0c7a022" name="Default Changelist" comment="" />
+      <created>1572344944228</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1572344944228</updated>
+      <workItem from="1572344945447" duration="2218000" />
+      <workItem from="1572366701719" duration="599000" />
+      <workItem from="1572379138955" duration="2256000" />
+      <workItem from="1572381633275" duration="996000" />
+      <workItem from="1572863796773" duration="2982000" />
+      <workItem from="1572948757051" duration="617000" />
+      <workItem from="1573160475094" duration="8271000" />
+      <workItem from="1573212378477" duration="3500000" />
+      <workItem from="1573320835189" duration="97000" />
+      <workItem from="1573320951026" duration="15615000" />
+      <workItem from="1573403496419" duration="12144000" />
+      <workItem from="1573468046801" duration="9241000" />
+      <workItem from="1573486470420" duration="9037000" />
+      <workItem from="1573554003641" duration="3331000" />
+      <workItem from="1573576489825" duration="706000" />
+      <workItem from="1573586815907" duration="1106000" />
+      <workItem from="1573641662800" duration="1768000" />
+      <workItem from="1573666579860" duration="1115000" />
+      <workItem from="1573669121449" duration="1223000" />
+      <workItem from="1573850066324" duration="1261000" />
+      <workItem from="1573851629870" duration="5308000" />
+      <workItem from="1573917566201" duration="21832000" />
+      <workItem from="1573939839761" duration="551000" />
+      <workItem from="1574005768866" duration="11280000" />
+      <workItem from="1574072204844" duration="3605000" />
+      <workItem from="1574094634687" duration="1901000" />
+      <workItem from="1574185503368" duration="1534000" />
+      <workItem from="1574267162869" duration="1674000" />
+      <workItem from="1574271111934" duration="319000" />
+      <workItem from="1574274708047" duration="248000" />
+      <workItem from="1574274986019" duration="68000" />
+      <workItem from="1574275421154" duration="740000" />
+      <workItem from="1574276209401" duration="65000" />
+      <workItem from="1574286498981" duration="1867000" />
+      <workItem from="1574331732672" duration="2006000" />
+      <workItem from="1574369122153" duration="524000" />
+      <workItem from="1574679381937" duration="2111000" />
+      <workItem from="1574703234270" duration="908000" />
+      <workItem from="1574768538326" duration="402000" />
+      <workItem from="1575139575389" duration="39000" />
+      <workItem from="1575140399939" duration="19000" />
+      <workItem from="1575140591444" duration="359000" />
+      <workItem from="1575284702015" duration="2306000" />
+    </task>
+    <task id="LOCAL-00001" summary="Initial commit of my project.">
+      <created>1572348045424</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1572348045424</updated>
+    </task>
+    <task id="LOCAL-00002" summary="Added README.md with initial information.">
+      <created>1572382490103</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1572382490103</updated>
+    </task>
+    <task id="LOCAL-00003" summary="Edited README.md with more information.">
+      <created>1572867760879</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1572867760879</updated>
+    </task>
+    <task id="LOCAL-00004" summary="First code commit. Started development of Comet Search feature. Trying now to return a JSON with the desired data.">
+      <created>1573168593420</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1573168593420</updated>
+    </task>
+    <task id="LOCAL-00005" summary="Starting to learn how to navigate and retrieve information from JSON provided by NASA API. It will take time.">
+      <created>1573215279264</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1573215279264</updated>
+    </task>
+    <task id="LOCAL-00006" summary="Edited README.md. Missing &quot;:&quot; at the end of the file.">
+      <created>1573215519999</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1573215519999</updated>
+    </task>
+    <task id="LOCAL-00007" summary="Started the development of the Comet object. Trying to figure a way to iterate over my JSON on an automatized way. The code is a mess but still working on it. Added local JSON to avoid my request limit consult of the API.">
+      <created>1573337102590</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1573337102590</updated>
+    </task>
+    <task id="LOCAL-00008" summary="One step closer to iterate over the JSON information about the comets. New switch structure to iterate over dates.">
+      <created>1573419358324</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1573419358324</updated>
+    </task>
+    <task id="LOCAL-00009" summary="Trying to solve a problem with a Data object, refactored the code.">
+      <created>1573477392654</created>
+      <option name="number" value="00009" />
+      <option name="presentableId" value="LOCAL-00009" />
+      <option name="project" value="LOCAL" />
+      <updated>1573477392654</updated>
+    </task>
+    <task id="LOCAL-00010" summary="Added a new JSON for location and trying to iterate over days to supply NASA API requirements. README.md file has been edited to add more possible functions to the project.">
+      <created>1573500742678</created>
+      <option name="number" value="00010" />
+      <option name="presentableId" value="LOCAL-00010" />
+      <option name="project" value="LOCAL" />
+      <updated>1573500742678</updated>
+    </task>
+    <task id="LOCAL-00011" summary="Function GPS / Location added and it is working with precise geolocation.">
+      <created>1573592733942</created>
+      <option name="number" value="00011" />
+      <option name="presentableId" value="LOCAL-00011" />
+      <option name="project" value="LOCAL" />
+      <updated>1573592733942</updated>
+    </task>
+    <task id="LOCAL-00012" summary="Continuing the development of Comet Search function - trying to iterate the date on the JSON structure.">
+      <created>1573858064626</created>
+      <option name="number" value="00012" />
+      <option name="presentableId" value="LOCAL-00012" />
+      <option name="project" value="LOCAL" />
+      <updated>1573858064626</updated>
+    </task>
+    <task id="LOCAL-00013" summary="The first feature is on final stage - the main code of Comet Search function has been developed and it is working smoothly. I also updated README.md, refactored the code and changed some variables and functions names.">
+      <created>1573940134159</created>
+      <option name="number" value="00013" />
+      <option name="presentableId" value="LOCAL-00013" />
+      <option name="project" value="LOCAL" />
+      <updated>1573940134159</updated>
+    </task>
+    <task id="LOCAL-00014" summary="Added the function to dynamically add and populate the table with the array of Comets (obj) extracted from the JSON previously. New CSS and possible font for the project added too. HTML revised and some parts of the code was refactored.">
+      <created>1574022119403</created>
+      <option name="number" value="00014" />
+      <option name="presentableId" value="LOCAL-00014" />
+      <option name="project" value="LOCAL" />
+      <updated>1574022119403</updated>
+    </task>
+    <task id="LOCAL-00015" summary="Code refactored and partially cleaned. Tests with project default Font started.">
+      <created>1574185807151</created>
+      <option name="number" value="00015" />
+      <option name="presentableId" value="LOCAL-00015" />
+      <option name="project" value="LOCAL" />
+      <updated>1574185807151</updated>
+    </task>
+    <task id="LOCAL-00016" summary="Trying new fonts for the interface.">
+      <created>1574274875020</created>
+      <option name="number" value="00016" />
+      <option name="presentableId" value="LOCAL-00016" />
+      <option name="project" value="LOCAL" />
+      <updated>1574274875020</updated>
+    </task>
+    <task id="LOCAL-00017" summary="Trying new fonts for the interface.">
+      <created>1574275766165</created>
+      <option name="number" value="00017" />
+      <option name="presentableId" value="LOCAL-00017" />
+      <option name="project" value="LOCAL" />
+      <updated>1574275766165</updated>
+    </task>
+    <task id="LOCAL-00018" summary="Started development of Mars Weather feature - new MarsWeather class and JSON with Mars weather information.">
+      <created>1574288507534</created>
+      <option name="number" value="00018" />
+      <option name="presentableId" value="LOCAL-00018" />
+      <option name="project" value="LOCAL" />
+      <updated>1574288507534</updated>
+    </task>
+    <option name="localTasksCounter" value="19" />
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="1" />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="1">
+          <value>
+            <State>
+              <option name="SHOW_ONLY_AFFECTED_CHANGES" value="true" />
+              <option name="FILTERS">
+                <map>
+                  <entry key="branch">
+                    <value>
+                      <list>
+                        <option value="HEAD" />
+                      </list>
+                    </value>
+                  </entry>
+                  <entry key="roots">
+                    <value>
+                      <list>
+                        <option value="$PROJECT_DIR$" />
+                      </list>
+                    </value>
+                  </entry>
+                </map>
+              </option>
+            </State>
+          </value>
+        </entry>
+        <entry key="MAIN">
+          <value>
+            <State>
+              <option name="COLUMN_ORDER" />
+            </State>
+          </value>
+        </entry>
+      </map>
+    </option>
+    <option name="OPEN_TABS">
+      <set>
+        <option value="1" />
+      </set>
+    </option>
+  </component>
+  <component name="VcsManagerConfiguration">
+    <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
+    <MESSAGE value="Initial commit of my project." />
+    <MESSAGE value="Added README.md with initial information." />
+    <MESSAGE value="Edited README.md with more information." />
+    <MESSAGE value="First code commit. Started development of Comet Search feature. Trying now to return a JSON with the desired data." />
+    <MESSAGE value="Starting to learn how to navigate and retrieve information from JSON provided by NASA API. It will take time." />
+    <MESSAGE value="Edited README.md. Missing &quot;:&quot; at the end of the file." />
+    <MESSAGE value="Started the development of the Comet object. Trying to figure a way to iterate over my JSON on an automatized way. The code is a mess but still working on it. Added local JSON to avoid my request limit consult of the API." />
+    <MESSAGE value="One step closer to iterate over the JSON information about the comets. New switch structure to iterate over dates." />
+    <MESSAGE value="Trying to solve a problem with a Data object, refactored the code." />
+    <MESSAGE value="Added a new JSON for location and trying to iterate over days to supply NASA API requirements. README.md file has been edited to add more possible functions to the project." />
+    <MESSAGE value="Function GPS / Location added and it is working with precise geolocation." />
+    <MESSAGE value="Continuing the development of Comet Search function - trying to iterate the date on the JSON structure." />
+    <MESSAGE value="The first feature is on final stage - the main code of Comet Search function has been developed and it is working smoothly. I also updated README.md, refactored the code and changed some variables and functions names." />
+    <MESSAGE value="Added the function to dynamically add and populate the table with the array of Comets (obj) extracted from the JSON previously. New CSS and possible font for the project added too. HTML revised and some parts of the code was refactored." />
+    <MESSAGE value="Code refactored and partially cleaned. Tests with project default Font started." />
+    <MESSAGE value="Trying new fonts for the interface." />
+    <MESSAGE value="Started development of Mars Weather feature - new MarsWeather class and JSON with Mars weather information." />
+    <option name="LAST_COMMIT_MESSAGE" value="Started development of Mars Weather feature - new MarsWeather class and JSON with Mars weather information." />
+  </component>
+  <component name="WindowStateProjectService">
+    <state x="574" y="128" key="#com.intellij.ide.util.MemberChooser" timestamp="1575286069421">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state x="574" y="128" key="#com.intellij.ide.util.MemberChooser/0.0.1536.824@0.0.1536.824" timestamp="1575286069421" />
+  </component>
+</project>
