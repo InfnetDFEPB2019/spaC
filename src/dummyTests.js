@@ -7,11 +7,11 @@ import Comet from './Comet.js';
 
 // https://api.nasa.gov/neo/rest/v1/feed?start_date=2015-09-07&end_date=2015-09-08&api_key=DEMO_KEY
 
-const START_DATE = String(document.querySelector("input#start").value),
-      END_DATE = String(document.querySelector("input#end").value);
+const /*START_DATE = String(document.querySelector("input#start").value),
+      END_DATE = String(document.querySelector("input#end").value);*/
 
-    /*START_DATE = "2019-12-01",
-    END_DATE = "2019-12-06";*/
+    START_DATE = "2019-12-01",
+    END_DATE = "2019-12-06";
 
 let URL = "https://api.nasa.gov/neo/rest/v1/feed?start_date=" + START_DATE + "&end_date=" + END_DATE + "&api_key=DEMO_KEY",
     cometList = Array();
@@ -24,8 +24,8 @@ searchButton.addEventListener("click", () => oReq.send());
 let oReq = new XMLHttpRequest();
 oReq.onload = cometSearch;
 
-// oReq.open("get", nasaJSON, true);
-oReq.open("get", URL, true);
+oReq.open("get", nasaJSON, true);
+// oReq.open("get", URL, true);
 
 function formatDateJSON(dateValue) {
     // new Date(Date.now()).toUTCString()

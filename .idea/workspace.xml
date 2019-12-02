@@ -2,9 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="bb34ccf3-d536-4157-b577-3a40d0c7a022" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/src/Comet.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/Comet.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/MarsWeather.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/MarsWeather.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/dummyTests.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/dummyTests.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -22,9 +20,6 @@
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
-  </component>
-  <component name="GithubDefaultAccount">
-    <option name="defaultAccountId" value="29be0069-abb4-4c31-b267-959fae94cf05" />
   </component>
   <component name="IgnoredFileRootStore">
     <option name="generatedRoots">
@@ -45,8 +40,9 @@
   <component name="PropertiesComponent">
     <property name="ASKED_ADD_EXTERNAL_FILES" value="true" />
     <property name="DefaultHtmlFileTemplate" value="HTML File" />
+    <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/resources/font" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="list.type.of.created.stylesheet" value="CSS" />
     <property name="settings.editor.selected.configurable" value="settings.github" />
   </component>
@@ -139,7 +135,9 @@
       <workItem from="1575139575389" duration="39000" />
       <workItem from="1575140399939" duration="19000" />
       <workItem from="1575140591444" duration="359000" />
-      <workItem from="1575284702015" duration="2306000" />
+      <workItem from="1575284702015" duration="2473000" />
+      <workItem from="1575290921338" duration="159000" />
+      <workItem from="1575315355889" duration="66000" />
     </task>
     <task id="LOCAL-00001" summary="Initial commit of my project.">
       <created>1572348045424</created>
@@ -267,7 +265,14 @@
       <option name="project" value="LOCAL" />
       <updated>1574288507534</updated>
     </task>
-    <option name="localTasksCounter" value="19" />
+    <task id="LOCAL-00019" summary="Making some changes on Comet class and continuing MarsWeather class development.">
+      <created>1575287120204</created>
+      <option name="number" value="00019" />
+      <option name="presentableId" value="LOCAL-00019" />
+      <option name="project" value="LOCAL" />
+      <updated>1575287120204</updated>
+    </task>
+    <option name="localTasksCounter" value="20" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -335,12 +340,29 @@
     <MESSAGE value="Code refactored and partially cleaned. Tests with project default Font started." />
     <MESSAGE value="Trying new fonts for the interface." />
     <MESSAGE value="Started development of Mars Weather feature - new MarsWeather class and JSON with Mars weather information." />
-    <option name="LAST_COMMIT_MESSAGE" value="Started development of Mars Weather feature - new MarsWeather class and JSON with Mars weather information." />
+    <MESSAGE value="Making some changes on Comet class and continuing MarsWeather class development." />
+    <option name="LAST_COMMIT_MESSAGE" value="Making some changes on Comet class and continuing MarsWeather class development." />
   </component>
   <component name="WindowStateProjectService">
     <state x="574" y="128" key="#com.intellij.ide.util.MemberChooser" timestamp="1575286069421">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
     <state x="574" y="128" key="#com.intellij.ide.util.MemberChooser/0.0.1536.824@0.0.1536.824" timestamp="1575286069421" />
+    <state x="196" y="6" key="CommitChangelistDialog2" timestamp="1575287119688">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state x="196" y="6" key="CommitChangelistDialog2/0.0.1536.824@0.0.1536.824" timestamp="1575287119688" />
+    <state x="277" y="54" key="SettingsEditor" timestamp="1575315424146">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state x="277" y="54" key="SettingsEditor/0.0.1536.824@0.0.1536.824" timestamp="1575315424146" />
+    <state x="361" y="145" key="Vcs.Push.Dialog.v2" timestamp="1575287125431">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state x="361" y="145" key="Vcs.Push.Dialog.v2/0.0.1536.824@0.0.1536.824" timestamp="1575287125431" />
+    <state x="488" y="203" key="git4idea.merge.GitPullDialog" timestamp="1575315442849">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state x="488" y="203" key="git4idea.merge.GitPullDialog/0.0.1536.824@0.0.1536.824" timestamp="1575315442849" />
   </component>
 </project>
