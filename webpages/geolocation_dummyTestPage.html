@@ -3,20 +3,18 @@
     <head>
         <meta charset="UTF-8">
         <meta http-equiv="content-language" content="en-us">
-        <title>Mars Weather</title>
+        <title>Comet Search</title>
         <link rel="stylesheet" href="../resources/css/styles.css">
 <!--        <link rel="stylesheet" href="https://use.typekit.net/dcd4tmk.css">-->
     </head>
     <body>
-
-        <iframe src='https://mars.nasa.gov/layout/embed/image/insightweather/' width='50%' height='500px'  scrolling='yes' frameborder='2'></iframe>
-
         <form>
             <label id="l1">spa</label><label id="l2">C</label><br>
+            <br><label for="date">Date:</label>
+            <input type="date" name="date" id="date"><br>
             <input type="button" value="Search" id="searchButton" name="searchButton" >
         </form>
         <br><br>
-        <table></table>
-        <script src="../src/mars_dummyTests.js" type="module"></script>
+        <script src="../src/geolocation_dummyTests.js" type="module"></script>
     </body>
 </html>

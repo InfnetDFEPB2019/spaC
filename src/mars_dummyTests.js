@@ -46,5 +46,6 @@ function weatherForecast () {
                                           averagePressure, samplesPressure, minimumPressure, maximumPressure,
                                           season);
         marsWeatherList.push(dayForecast);
-    }
+
+    } console.log(marsWeatherList);
 }

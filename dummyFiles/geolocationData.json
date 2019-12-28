@@ -1,0 +1,20 @@
+{
+  "location": {
+    "latitude": -22.906149,
+    "longitude": -43.176866
+  },
+  "date": "2019-12-29",
+  "sunrise": "05:09",
+  "sunset": "18:41",
+  "solar_noon": "11:57",
+  "day_length": "13:32",
+  "sun_altitude": -27.29939323230179,
+  "sun_distance": 147116479.5362478,
+  "sun_azimuth": 225.6307940700754,
+  "moonrise": "08:58",
+  "moonset": "21:34",
+  "moon_altitude": 7.462071178934288,
+  "moon_distance": 401490.56424289686,
+  "moon_azimuth": 253.92044112504902,
+  "moon_parallactic_angle": 112.13329032190006
+}
