@@ -2,13 +2,13 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="bb34ccf3-d536-4157-b577-3a40d0c7a022" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/dummyFiles/geolocationData.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Geolocation.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/geolocation_dummyTests.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/webpages/geolocation_dummyTestPage.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dummyFiles/ISSCrew.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dummyFiles/ISSData.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dummyFiles/ISSPassPrediction.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/ISS.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/ISS_dummyTests.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/webpages/ISS_dummyTestPage.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/mars_dummyTests.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/mars_dummyTests.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/webpages/mars_dummyTestPage.html" beforeDir="false" afterPath="$PROJECT_DIR$/webpages/mars_dummyTestPage.html" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -48,21 +48,21 @@
     <property name="DefaultHtmlFileTemplate" value="HTML File" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/webpages" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/src" />
     <property name="list.type.of.created.stylesheet" value="CSS" />
     <property name="settings.editor.selected.configurable" value="preferences.lookFeel" />
   </component>
   <component name="RecentsManager">
-    <key name="CopyFile.RECENT_KEYS">
-      <recent name="D:\WebstormProjects\spaC\webpages" />
-      <recent name="D:\WebstormProjects\spaC\src" />
-      <recent name="C:\Users\user-admin\WebstormProjects\spaC\resources\font" />
-    </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="C:\Users\user-admin\WebstormProjects\spaC\src" />
       <recent name="C:\Users\user-admin\WebstormProjects\spaC\resources" />
       <recent name="C:\Users\user-admin\WebstormProjects\spaC\src\object" />
       <recent name="C:\Users\user-admin\WebstormProjects\spaC\resources\css" />
+    </key>
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="D:\WebstormProjects\spaC\src" />
+      <recent name="D:\WebstormProjects\spaC\webpages" />
+      <recent name="C:\Users\user-admin\WebstormProjects\spaC\resources\font" />
     </key>
   </component>
   <component name="RunManager" selected="Node.js.tests.js">
@@ -152,7 +152,8 @@
       <workItem from="1576492519692" duration="2664000" />
       <workItem from="1577047797763" duration="603000" />
       <workItem from="1577281902696" duration="316000" />
-      <workItem from="1577565240310" duration="5363000" />
+      <workItem from="1577565240310" duration="5684000" />
+      <workItem from="1577726466164" duration="7477000" />
     </task>
     <task id="LOCAL-00001" summary="Initial commit of my project.">
       <created>1572348045424</created>
@@ -301,7 +302,14 @@
       <option name="project" value="LOCAL" />
       <updated>1576345813043</updated>
     </task>
-    <option name="localTasksCounter" value="22" />
+    <task id="LOCAL-00022" summary="Started developing a feature to obtain astronomical data based on user's location.">
+      <created>1577570704871</created>
+      <option name="number" value="00022" />
+      <option name="presentableId" value="LOCAL-00022" />
+      <option name="project" value="LOCAL" />
+      <updated>1577570704871</updated>
+    </task>
+    <option name="localTasksCounter" value="23" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -372,21 +380,22 @@
     <MESSAGE value="Making some changes on Comet class and continuing MarsWeather class development." />
     <MESSAGE value="Switched back to local JSON for further development." />
     <MESSAGE value="Mars Weather is now working and returning the data from API. It is still missing to format the response values." />
-    <option name="LAST_COMMIT_MESSAGE" value="Mars Weather is now working and returning the data from API. It is still missing to format the response values." />
+    <MESSAGE value="Started developing a feature to obtain astronomical data based on user's location." />
+    <option name="LAST_COMMIT_MESSAGE" value="Started developing a feature to obtain astronomical data based on user's location." />
   </component>
   <component name="WindowStateProjectService">
     <state x="508" y="215" key="#com.intellij.fileTypes.FileTypeChooser" timestamp="1577567905728">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
     <state x="508" y="215" key="#com.intellij.fileTypes.FileTypeChooser/0.0.1536.824@0.0.1536.824" timestamp="1577567905728" />
-    <state x="574" y="128" key="#com.intellij.ide.util.MemberChooser" timestamp="1577568995138">
+    <state x="574" y="128" key="#com.intellij.ide.util.MemberChooser" timestamp="1577732512540">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state x="574" y="128" key="#com.intellij.ide.util.MemberChooser/0.0.1536.824@0.0.1536.824" timestamp="1577568995138" />
-    <state x="196" y="6" key="CommitChangelistDialog2" timestamp="1576345812371">
+    <state x="574" y="128" key="#com.intellij.ide.util.MemberChooser/0.0.1536.824@0.0.1536.824" timestamp="1577732512540" />
+    <state x="196" y="6" key="CommitChangelistDialog2" timestamp="1577570704236">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state x="196" y="6" key="CommitChangelistDialog2/0.0.1536.824@0.0.1536.824" timestamp="1576345812371" />
+    <state x="196" y="6" key="CommitChangelistDialog2/0.0.1536.824@0.0.1536.824" timestamp="1577570704236" />
     <state x="549" y="167" key="FileChooserDialogImpl" timestamp="1575316338928">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
@@ -395,13 +404,17 @@
       <screen x="0" y="0" width="1536" height="824" />
     </state>
     <state x="277" y="54" key="SettingsEditor/0.0.1536.824@0.0.1536.824" timestamp="1577565729939" />
-    <state x="361" y="145" key="Vcs.Push.Dialog.v2" timestamp="1576345817828">
+    <state x="361" y="145" key="Vcs.Push.Dialog.v2" timestamp="1577570712140">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state x="361" y="145" key="Vcs.Push.Dialog.v2/0.0.1536.824@0.0.1536.824" timestamp="1576345817828" />
+    <state x="361" y="145" key="Vcs.Push.Dialog.v2/0.0.1536.824@0.0.1536.824" timestamp="1577570712140" />
     <state x="488" y="203" key="git4idea.merge.GitPullDialog" timestamp="1575315442849">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
     <state x="488" y="203" key="git4idea.merge.GitPullDialog/0.0.1536.824@0.0.1536.824" timestamp="1575315442849" />
+    <state x="425" y="187" key="run.anything.popup" timestamp="1577732253333">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state x="425" y="187" key="run.anything.popup/0.0.1536.824@0.0.1536.824" timestamp="1577732253333" />
   </component>
 </project>
